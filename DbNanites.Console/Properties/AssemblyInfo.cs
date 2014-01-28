@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("DbNanites.Core")]
-[assembly: AssemblyDescription("Core nanites doing the magic to your relational database")]
+[assembly: AssemblyTitle("DbNanites.Console")]
+[assembly: AssemblyDescription("Some nanites running on the console to use DbNanites without another application")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DbNanites")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Die folgende GUID bestimmt die ID der Typbibliothek, wenn dieses Projekt für COM verfügbar gemacht wird
-[assembly: Guid("ec6f2f9d-9876-4986-a1b1-d177792ad5a2")]
+[assembly: Guid("32b2a5eb-a689-4963-bc91-085e0843bb16")]
 
 // Versionsinformationen für eine Assembly bestehen aus den folgenden vier Werten:
 //
