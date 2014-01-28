@@ -1,0 +1,32 @@
+﻿scheme:
+	settings:
+	tables:
+		ItemGroups:
+			Id: int
+			Name: nchar(50)
+		Items:
+			Id: int
+			Name: nchar(50)
+			Group: int
+			Description: text
+			StockManaged: tinyint
+			DimX: numeric(18,4)
+			DimY: numeric(18,4)
+			DimZ: numeric(18,4)
+			Published: datetime
+			Responsible: int
+			Modified: timestamp
+		Users:
+			Id: int
+			Login: nchar(30)
+			Email: nchar(200)
+			DisplayName: nchar(100)
+			Password: nchar(50)
+data:
+	Users:
+		record:
+			Id: 1
+			Login: "admin"
+			Email: "admin@unittest.com"
+			DisplayName: "Administrator"
+			Password: "abc"

@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -53,6 +55,24 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestDatabase.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbNanites.Console\DbNanites.Console.csproj">
+      <Project>{224c7a70-f5dc-4722-b870-661d81b4e67c}</Project>
+      <Name>DbNanites.Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DbNanites.Core\DbNanites.Core.csproj">
+      <Project>{10a8c58f-9104-4bbd-aac0-d14d0294fee0}</Project>
+      <Name>DbNanites.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
