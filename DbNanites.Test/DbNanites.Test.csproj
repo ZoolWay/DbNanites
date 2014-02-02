@@ -36,12 +36,6 @@
     <Reference Include="YamlDotNet">
       <HintPath>..\packages\YamlDotNet.3.0.0\lib\net35\YamlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite">
-      <HintPath>..\packages\System.Data.SQLite.1.0.90.0\lib\net40\System.Data.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.Linq">
-      <HintPath>..\packages\System.Data.SQLite.1.0.90.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Test.cs" />
@@ -51,7 +45,5 @@
     <None Include="packages.config" />
     <None Include="TestDatabase.mdf" />
     <None Include="TestDatabase.yml" />
-    <None Include="x86\SQLite.Interop.dll" />
-    <None Include="x64\SQLite.Interop.dll" />
   </ItemGroup>
 </Project>
