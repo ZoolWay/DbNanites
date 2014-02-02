@@ -52,8 +52,6 @@
     <None Include="TestDatabase.mdf" />
     <None Include="TestDatabase.yml" />
     <None Include="x86\SQLite.Interop.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="x64\" />
+    <None Include="x64\SQLite.Interop.dll" />
   </ItemGroup>
 </Project>
