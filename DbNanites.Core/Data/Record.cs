@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace DbNanites.Core
+namespace DbNanites.Core.Data
 {
-    public class Class1
+    class Record : Dictionary<string, object>
     {
     }
 }

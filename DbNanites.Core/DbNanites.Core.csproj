@@ -46,8 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DatabaseDefinition.cs" />
+    <Compile Include="DatabaseParser.cs" />
+    <Compile Include="Data\ImportSet.cs" />
+    <Compile Include="Data\Record.cs" />
+    <Compile Include="Data\TableSet.cs" />
+    <Compile Include="Scheme\SchemeDefinition.cs" />
+    <Compile Include="YamlDefinition.cs" />
+    <Compile Include="YamlParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scheme\ColumnDefinition.cs" />
+    <Compile Include="Scheme\Datatype.cs" />
+    <Compile Include="Scheme\IndexDefinition.cs" />
+    <Compile Include="Scheme\TableDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
