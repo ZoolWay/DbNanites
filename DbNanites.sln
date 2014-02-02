@@ -1,10 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbNanites.Core", "DbNanites.Core\DbNanites.Core.csproj", "{10A8C58F-9104-4BBD-AAC0-D14D0294FEE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbNanites.Console", "DbNanites.Console\DbNanites.Console.csproj", "{224C7A70-F5DC-4722-B870-661D81B4E67C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbNanites.Test", "DbNanites.Test\DbNanites.Test.csproj", "{3855883D-FF64-4BF3-B4EE-4164BD13E26D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbNanites.Test", "DbNanites.Test\DbNanites.Test.csproj", "{F4DF8A5B-BE8F-4AC1-BD86-1CA30740AE5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +21,10 @@ Global
 		{224C7A70-F5DC-4722-B870-661D81B4E67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224C7A70-F5DC-4722-B870-661D81B4E67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{224C7A70-F5DC-4722-B870-661D81B4E67C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DF8A5B-BE8F-4AC1-BD86-1CA30740AE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DF8A5B-BE8F-4AC1-BD86-1CA30740AE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DF8A5B-BE8F-4AC1-BD86-1CA30740AE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DF8A5B-BE8F-4AC1-BD86-1CA30740AE5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DbNanites.Core\DbNanites.Core.csproj
