@@ -36,14 +36,23 @@
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test.cs" />
+    <Compile Include="TestYamlDefinition.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="TestDatabase.mdf" />
-    <None Include="TestDatabase.yml" />
+    <None Include="TestDatabase.yml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbNanites.Core\DbNanites.Core.csproj">
+      <Project>{10A8C58F-9104-4BBD-AAC0-D14D0294FEE0}</Project>
+      <Name>DbNanites.Core</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
