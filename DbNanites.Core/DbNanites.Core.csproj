@@ -61,6 +61,8 @@
     <Compile Include="Scheme\Datatype.cs" />
     <Compile Include="Scheme\IndexDefinition.cs" />
     <Compile Include="Scheme\TableDefinition.cs" />
+    <Compile Include="IParser.cs" />
+    <Compile Include="IDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
