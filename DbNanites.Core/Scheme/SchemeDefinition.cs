@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DbNanites.Core.Scheme
 {
-    class SchemeDefinition
+	public class SchemeDefinition
     {
         public string Name { get; set; }
 

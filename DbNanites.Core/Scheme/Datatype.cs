@@ -8,7 +8,7 @@ namespace DbNanites.Core.Scheme
     /// <summary>
     /// DbNanites meta datatype which has to be mapped to the database.
     /// </summary>
-    enum Datatype
+	public enum Datatype
     {
         /// <summary>
         /// Unknown, used for errornous or undetermined values.

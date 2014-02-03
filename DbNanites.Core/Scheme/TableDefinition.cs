@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DbNanites.Core.Scheme
 {
-    class TableDefinition
+	public class TableDefinition
     {
         public IEnumerable<ColumnDefinition> Columns { get; set; }
 
