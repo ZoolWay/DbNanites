@@ -4,7 +4,7 @@ using DbNanites.Core.Data;
 
 namespace DbNanites.Core
 {
-	public interface IDefinition
+	public interface IInputDefinition
 	{
 		SchemeDefinition Scheme { get; set; }
 

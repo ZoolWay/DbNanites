@@ -10,8 +10,8 @@ namespace DbNanites.Test
 	[TestFixture ()]
 	public class TestYamlDefinition
 	{
-		IParser parser;
-		IDefinition definition;
+		IInputParser parser;
+		IInputDefinition definition;
 
 		[SetUp]
 		public void Init()
