@@ -1,27 +1,39 @@
-﻿scheme:
-	settings:
+﻿settings:
+	
+settings:
+scheme:
 	tables:
 		ItemGroups:
-			Id: int
-			Name: nchar(50)
+			columns:
+				Id: int
+				Name: char(50)
+			indexes:
+				pk: Id
 		Items:
-			Id: int
-			Name: nchar(50)
-			Group: int
-			Description: text
-			StockManaged: tinyint
-			DimX: numeric(18,4)
-			DimY: numeric(18,4)
-			DimZ: numeric(18,4)
-			Published: datetime
-			Responsible: int
-			Modified: timestamp
+			columns:
+				Id: int
+				Name: char(50)
+				Group: int
+				Description: text, NULL
+				StockManaged: bool
+				DimX: numeric(18,4), NULL
+				DimY: numeric(18,4), NULL
+				DimZ: numeric(18,4), NULL
+				Published: datetime
+				Responsible: int
+				Modified: timestamp
+			indexes:
+				pk: Id
 		Users:
-			Id: int
-			Login: nchar(30)
-			Email: nchar(200)
-			DisplayName: nchar(100)
-			Password: nchar(50)
+			columns:
+				Id: int
+				Login: char(30)
+				Email: varchar(200)
+				DisplayName: varchar(100)
+				Password: char(50)
+			indexes:
+				pk: Id
+				idxLogin: Login, unique
 data:
 	Users:
 		record:
