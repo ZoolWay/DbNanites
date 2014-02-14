@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DbNanites.Core.Scheme
 {
-	public class IndexDefinition
+    internal class IndexDefinition
     {
         public IEnumerable<string> ColumnNames { get; set; }
     }

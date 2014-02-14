@@ -48,21 +48,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analyzer.cs" />
     <Compile Include="DatabaseDefinition.cs" />
     <Compile Include="DatabaseParser.cs" />
     <Compile Include="Data\ImportSet.cs" />
     <Compile Include="Data\Record.cs" />
     <Compile Include="Data\TableSet.cs" />
+    <Compile Include="IAnalyzeResult.cs" />
+    <Compile Include="IMigrationTask.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="IModelParseResult.cs" />
+    <Compile Include="MigrationRunner.cs" />
+    <Compile Include="ParserFactory.cs" />
     <Compile Include="Scheme\SchemeDefinition.cs" />
-    <Compile Include="YamlDefinition.cs" />
-    <Compile Include="YamlParser.cs" />
+    <Compile Include="Parsers\YamlParseResult.cs" />
+    <Compile Include="Parsers\YamlParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scheme\ColumnDefinition.cs" />
     <Compile Include="Scheme\Datatype.cs" />
     <Compile Include="Scheme\IndexDefinition.cs" />
     <Compile Include="Scheme\TableDefinition.cs" />
-    <Compile Include="IInputDefinition.cs" />
-    <Compile Include="IInputParser.cs" />
+    <Compile Include="IModelParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

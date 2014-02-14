@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DbNanites.Core.Data
 {
-	public class Record : Dictionary<string, object>
+    internal class Record : Dictionary<string, object>
     {
     }
 }

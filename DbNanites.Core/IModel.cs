@@ -7,10 +7,10 @@ using System.Text;
 
 namespace DbNanites.Core
 {
-	public class YamlDefinition : IInputDefinition
+    internal interface IModel
     {
-        public SchemeDefinition Scheme { get; set; }
+        SchemeDefinition Scheme { get; set; }
 
-        public ImportSet Data { get; set; }
+        ImportSet Data { get; set; }
     }
 }

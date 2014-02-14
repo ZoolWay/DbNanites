@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DbNanites.Core.Data
 {
-	public class TableSet
+    internal class TableSet
     {
         public string TableName { get; set; }
 

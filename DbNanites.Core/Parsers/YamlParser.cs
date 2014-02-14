@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace DbNanites.Core
 {
-	public class YamlParser : IInputParser
+	internal class YamlParser : IModelParser
     {
 
         public YamlParser()
         {
         }
 
-		public IInputDefinition Parse(string filename)
+        public IModelParseResult Parse(string filename)
         {
             using (FileStream fs = File.OpenRead(filename))
             {
@@ -22,7 +22,7 @@ namespace DbNanites.Core
             }
         }
 
-		public IInputDefinition Parse(Stream yamlInputStream)
+        public IModelParseResult Parse(Stream yamlInputStream)
         {
             throw new NotImplementedException();
         }
