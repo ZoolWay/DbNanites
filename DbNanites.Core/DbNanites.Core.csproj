@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analyzer.cs" />
+    <Compile Include="AnalyzeResult.cs" />
     <Compile Include="DatabaseDefinition.cs" />
     <Compile Include="DatabaseParser.cs" />
     <Compile Include="Data\ImportSet.cs" />
@@ -60,6 +61,9 @@
     <Compile Include="IModelParseResult.cs" />
     <Compile Include="MigrationRunner.cs" />
     <Compile Include="ParserFactory.cs" />
+    <Compile Include="Parsers\Database\Factory.cs" />
+    <Compile Include="Parsers\Database\IDbParser.cs" />
+    <Compile Include="Parsers\Database\InformationSchemeSupported.cs" />
     <Compile Include="Scheme\SchemeDefinition.cs" />
     <Compile Include="Parsers\YamlParseResult.cs" />
     <Compile Include="Parsers\YamlParser.cs" />

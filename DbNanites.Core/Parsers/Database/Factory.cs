@@ -21,6 +21,7 @@ namespace DbNanites.Core.Parsers.Database
                 case "System.Data.SqlClient.SqlConnection": // MS SQL
                 case "Npgsql.NpgsqlConnection": // PostgreSQL
                 case "MySql.Data.MySqlClient.MySqlConnection": // MySQL
+                case "System.Data.SQLite.SQLiteConnection": // SQLite
                     return new InformationSchemeSupported();
 
                 case "IBM.Data.DB2.iSeries.iDB2Connection":
