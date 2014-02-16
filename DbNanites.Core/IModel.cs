@@ -9,6 +9,8 @@ namespace DbNanites.Core
 {
     internal interface IModel
     {
+        string Description { get; }
+
         SchemeDefinition Scheme { get; set; }
 
         ImportSet Data { get; set; }

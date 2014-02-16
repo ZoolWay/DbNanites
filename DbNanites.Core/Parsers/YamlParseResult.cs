@@ -9,6 +9,8 @@ namespace DbNanites.Core
 {
 	internal class YamlParseResult : IModelParseResult, IModel
     {
+        public string Description { get; set; }
+
         public SchemeDefinition Scheme { get; set; }
 
         public ImportSet Data { get; set; }
