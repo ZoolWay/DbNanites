@@ -9,6 +9,11 @@ namespace DbNanites.Core.Scheme
     {
         public string Name { get; set; }
 
-        public IEnumerable<TableDefinition> Tables { get; set; }
+        public List<TableDefinition> Tables { get; private set; }
+
+        public SchemeDefinition()
+        {
+            this.Tables = new List<TableDefinition>();
+        }
     }
 }

@@ -7,12 +7,19 @@ namespace DbNanites.Core.Scheme
 {
     internal class TableDefinition
     {
-        public IEnumerable<ColumnDefinition> Columns { get; set; }
+        public List<ColumnDefinition> Columns { get; private set; }
 
         public string Name { get; set; }
 
         public IndexDefinition PrimaryKey { get; set; }
 
-        public IEnumerable<IndexDefinition> Indexes { get; set; }
+        public List<IndexDefinition> Indexes { get; private set; }
+
+        public TableDefinition()
+        {
+            this.Columns = new List<ColumnDefinition>();
+            this.Indexes = new List<IndexDefinition>();
+        }
+
     }
 }
