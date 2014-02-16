@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DbNanites.Core
 {
-	internal class YamlDefinition : IModelParseResult, IModel
+	internal class YamlParseResult : IModelParseResult, IModel
     {
         public SchemeDefinition Scheme { get; set; }
 
